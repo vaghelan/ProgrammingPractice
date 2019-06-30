@@ -1,0 +1,60 @@
+Modified and Simplified Algorithm:
+
+
+Let us say there are 5 nodes : A, B, C, D, E
+Topology :
+{
+A : [ B, C ]
+B : [ A, D ]
+C : [ A, D ]
+D : [ B, C ]
+E : [ D ]
+}
+
+Each machine program initializes its view if topology with its neighbors in config
+
+E.g. for A let us say its neighbors are B and C. It initializes as follows :
+
+A:
+  {
+    A: { nodes : [ unknown ], num : 2 } (number of neighbors in that in config which is known)
+    B: { nodes : [ unknown ], num : -1 } (-1 means unknown)
+    E: [ nodes : [ unknown ], num : -1 } (-1 means unknown)
+  }
+
+After B and C, connects it sends  their info it will fill in the info we can update
+A:
+  {
+    A: [ B, C ], 2 (resolved)
+    B: [ A ], 2 (1 left)
+    C: [ A ], 1 (1 left)
+
+  }
+
+Convergence :
+
+
+A node should stop and print when its state is resolved and we have key for each node in the topology tree and all members are
+resolved.
+So e.g. in above example "A" should wait for "B" and "C" to resolve and also receive information "C" and "D"
+
+So when A reached following state (where we have everything resolved at each entry and we have keys for all nodes
+A:
+  {
+    A: [ B, C ], 2
+    B: [ A, D ], 2
+    C: [ A, D ], 2
+    D:  [ B, C ], 2
+    E:  [ D ] , 1
+
+  }
+
+
+ To Test individual Test Case :
+
+ cd test-1
+ ./launch.sh
+
+
+ To Test all test cases :
+ ./launch_all.sh

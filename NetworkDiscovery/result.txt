@@ -1,0 +1,126 @@
+======test case 1=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "In {0} science, the {1} numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."
+new      = "In computer science, the natural numbers always include zero. In mathematics, some {texts define them to include zero} and some do not."
+======test case 1=======
+
+======test case 2=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = ""
+new      = ""
+======test case 2=======
+
+======test case 3=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "{}"
+new      = "{}"
+======test case 3=======
+
+======test case 4=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "{-1}"
+new      = "{-1}"
+======test case 4=======
+
+======test case 5=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "{55}"
+new      = "{55}"
+======test case 5=======
+
+======test case 6=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "{{{{{   0   }}}}}"
+new      = "{{{{computer}}}}"
+======test case 6=======
+
+======test case 7=======
+words = ['computer', 'natural', 'zero', 'mathematics', 'texts']
+original = "jskncksnaknskl"
+new      = "jskncksnaknskl"
+======test case 7=======
+
+======test case 8=======
+words = ['computer']
+original = "In {0} science, the {1} numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."
+new      = "In computer science, the {1} numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."
+======test case 8=======
+
+======test case 9=======
+words = ['computer']
+original = ""
+new      = ""
+======test case 9=======
+
+======test case 10=======
+words = ['computer']
+original = "{}"
+new      = "{}"
+======test case 10=======
+
+======test case 11=======
+words = ['computer']
+original = "{-1}"
+new      = "{-1}"
+======test case 11=======
+
+======test case 12=======
+words = ['computer']
+original = "{55}"
+new      = "{55}"
+======test case 12=======
+
+======test case 13=======
+words = ['computer']
+original = "{{{{{   0   }}}}}"
+new      = "{{{{computer}}}}"
+======test case 13=======
+
+======test case 14=======
+words = ['computer']
+original = "jskncksnaknskl"
+new      = "jskncksnaknskl"
+======test case 14=======
+
+======test case 15=======
+words = []
+original = "In {0} science, the {1} numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."
+new      = "In {0} science, the {1} numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."
+======test case 15=======
+
+======test case 16=======
+words = []
+original = ""
+new      = ""
+======test case 16=======
+
+======test case 17=======
+words = []
+original = "{}"
+new      = "{}"
+======test case 17=======
+
+======test case 18=======
+words = []
+original = "{-1}"
+new      = "{-1}"
+======test case 18=======
+
+======test case 19=======
+words = []
+original = "{55}"
+new      = "{55}"
+======test case 19=======
+
+======test case 20=======
+words = []
+original = "{{{{{   0   }}}}}"
+new      = "{{{{{   0   }}}}}"
+======test case 20=======
+
+======test case 21=======
+words = []
+original = "jskncksnaknskl"
+new      = "jskncksnaknskl"
+======test case 21=======
+

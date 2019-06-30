@@ -1,0 +1,9 @@
+There are 7 machines in this topology. The following are the machines and their neighbors discovered from machine D:
+A : [ B, C, D, E, F, G ] 
+B : [ A ] 
+C : [ A ] 
+D : [ A ] 
+E : [ A ] 
+F : [ A ] 
+G : [ A ] 
+Total time taken for discovery for machine D: 0.11 seconds

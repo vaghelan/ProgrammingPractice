@@ -1,0 +1,12 @@
+21:58:25: Serving on ('127.0.0.1', 5001)
+21:58:25: WAIT COMPLETED>.....
+21:58:25: CONVERGENCE ACHIEVED!!!
+21:58:25: All clients exited !!
+21:58:25: ===================
+21:58:25: A : [  ] 
+
+21:58:25: Total time taken for discovery for machine A: 0.0 seconds
+
+21:58:25: ===================
+21:58:25: Program Terminating!!
+[]
