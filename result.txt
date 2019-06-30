@@ -1,0 +1,2 @@
+======test case 21=======words = []original = "In {0} science, the {  1   } numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."new      = "In {0} science, the {  1   } numbers always include {2}. In {3}, some {{4} define them to include {2}} and some do not."======test case 21=======
+
